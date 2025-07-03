@@ -1,0 +1,61 @@
+{
+  "name": "image-viewer-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for viewing images from the filesystem, enabling AI analysis of screenshots and visual content",
+  "main": "image-viewer-mcp.js",
+  "type": "module",
+  "scripts": {
+    "start": "node image-viewer-mcp.js",
+    "dev": "node --watch image-viewer-mcp.js",
+    "install-global": "npm install -g .",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "format": "prettier --write *.js *.json *.md",
+    "format:check": "prettier --check *.js *.json *.md",
+    "prepublishOnly": "npm run lint && npm run format:check"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "image",
+    "analysis",
+    "dusk",
+    "testing",
+    "screenshots",
+    "model-context-protocol",
+    "ai",
+    "cursor",
+    "windsurf"
+  ],
+  "author": "Worksome Platform Team",
+  "license": "MIT",
+  "bin": {
+    "image-viewer-mcp": "image-viewer-mcp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odinns/image-viewer-mcp.git"
+  },
+  "homepage": "https://github.com/odinns/image-viewer-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/odinns/image-viewer-mcp/issues"
+  },
+  "files": [
+    "image-viewer-mcp.js",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.35.1"
+  }
+}
